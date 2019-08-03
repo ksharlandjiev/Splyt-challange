@@ -1,0 +1,22 @@
+{
+  "name": "splyt",
+  "version": "1.0.0",
+  "description": "Write a function defaultArguments . It takes a function as an argument, along with an object",
+  "main": "index.js",
+  "scripts": {    
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksharlandjiev/Splyt-challange.git"
+  },
+  "author": "Kamen Sharlandjiev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksharlandjiev/Splyt-challange/issues"
+  },
+  "homepage": "https://github.com/ksharlandjiev/Splyt-challange#readme",
+  "dependencies": {
+    "parse-function": "^5.2.11"
+  }
+}

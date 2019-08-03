@@ -26,7 +26,27 @@ describe('function tests', function () {
     doAssert(add)
   });
 
-  
+  it('test function with defaults', function () {    
+    const add = (a=2, b=1) => {
+        return a + b;
+    }
+
+    const add1 = defaultArguments(add, { });
+    expect(add1()).to.be.equal(3);
+
+    const add2 = defaultArguments(add, { b: 4, a: 1 });
+    expect(add2()).to.be.equal(5);    
+
+    const add3 = defaultArguments(add, { b: 2 });
+    expect(add3()).to.be.equal(4);    
+    expect(add3(6)).to.be.equal(8);
+
+    const add4 = defaultArguments(add, { a: 8 });
+    expect(add4()).to.be.equal(9); 
+
+
+
+  });
 
   function doAssert(func) {
     const add2 = defaultArguments(func, { b: 9 });

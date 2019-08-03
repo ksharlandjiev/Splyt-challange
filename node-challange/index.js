@@ -7,10 +7,13 @@ function defaultArguments(wrapped, decoreatedArgs, ecmaVersion = 2017) {
       });
       const parsed = app.parse(wrapped);  
       const params = [];
-      parsed.args.forEach( (p, i) => {        
-          params.push( decoreatedArgs && decoreatedArgs[p] && p + '=' + decoreatedArgs[p] || p )
+      parsed.args.forEach( (p) => {        
+        params.push( 
+            decoreatedArgs && decoreatedArgs[p] && p + '=' + decoreatedArgs[p] || 
+            parsed.defaults &&  parsed.defaults[p] && p+ '='+  parsed.defaults[p] || 
+            p 
+        )
       })  
-      
       return new Function(...params, parsed.body);
 
     }

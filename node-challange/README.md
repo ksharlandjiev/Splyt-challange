@@ -1,4 +1,4 @@
-# Splyt node challange 1
+# Splyt node challange  - defaultArguments function
 
 ## Background
 Write a function defaultArguments . It takes a function as an argument, along with an object

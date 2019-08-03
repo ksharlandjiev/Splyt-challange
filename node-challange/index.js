@@ -1,4 +1,3 @@
-
 const defaultArguments = require("./defaultArguments");
 const assertedFunc = require("./assertedFunction");
 
@@ -15,3 +14,5 @@ console.assert(add3(undefined, 10) === 12);
 
 const add4 = defaultArguments(assertedFunc, { c: 3 }); // doesn't do anything, since c isn't console.assert(isNaN(add4(10)));
 console.assert(add4(10, 10) === 20);
+
+console.log('script execution finished')

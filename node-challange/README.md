@@ -14,9 +14,9 @@ Since EcamScript decorators are still in Stage 2 they are not production ready. 
 npm install
 ```
 * edit assertedFunction.js and add your own. 
-
+* modify index.js and add your asertions.
 
 * Run test
 ```
-npm install
+npm run test
 ```

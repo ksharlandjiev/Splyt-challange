@@ -5,18 +5,38 @@ Write a function defaultArguments . It takes a function as an argument, along wi
 containing default values for that function's arguments, and returns another function which defaults to the
 right values.
 
-## Dependencies
-Since EcamScript decorators are still in Stage 2 they are not production ready. Hence why we use an 3rd party library to parse function and construct a new one.
+## Decision taken to complete this task.
+While this task is easy to solve in other programming languages with the use of reflection API and Decorator pattern, it does provide some challanges in JavaScript.
+EcamScript [decorators](https://github.com/tc39/proposal-decorators) are still at Stage 2 and not production ready. At present, using decorators requires transpiler support, since no current browser or Node release has support for them yet. To implement at this stage, we'll have to use Babel alongside transform-decorators-legacy plugin.
+Another option is the use of TypeScript.
+
+At this stage, a decision has been made to use a 3rd party [parse-function](https://www.npmjs.com/package/parse-function) dependency to help us "decompile" functions and gives us the ability to construct a new decorated one.
 
 ## Installation
 * Install dependencies
 ```
 npm install
 ```
-* edit assertedFunction.js and add your own. 
-* modify index.js and add your asertions.
 
-* Run test
+## Usage
+```js
+const defaultArguments = require('./defaultArguments');
+
+function foo(bar, baz) {
+  return bar + baz
+}
+
+const decoratedFunction = defaultArguments(foo, {baz:9})
+console.assert(decoratedFunction(10) === 19);
 ```
-npm run test
+
+## Tests
+
 ```
+npm test
+```
+
+## License
+
+[MIT](http://josh.mit-license.org)
+

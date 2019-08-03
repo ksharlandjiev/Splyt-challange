@@ -1,22 +1,29 @@
 {
-  "name": "splyt",
+  "name": "default-arguments",
   "version": "1.0.0",
-  "description": "Write a function defaultArguments . It takes a function as an argument, along with an object",
+  "description": "Decorator function that takes a function as its first argument, along with an object for default values.",
   "main": "index.js",
-  "scripts": {    
-    "test": "node index.js"
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ksharlandjiev/Splyt-challange.git"
   },
   "author": "Kamen Sharlandjiev",
-  "license": "ISC",
-  "bugs": {
+  "license": "MIT",
+    "bugs": {
     "url": "https://github.com/ksharlandjiev/Splyt-challange/issues"
   },
   "homepage": "https://github.com/ksharlandjiev/Splyt-challange#readme",
   "dependencies": {
     "parse-function": "^5.2.11"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
   }
 }

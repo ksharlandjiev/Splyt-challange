@@ -7,7 +7,7 @@ right values.
 
 ## Decision taken to complete this task.
 While this task is easy to solve in other programming languages with the use of reflection API and Decorator pattern, it does provide some challanges in JavaScript.
-EcamScript [decorators](https://github.com/tc39/proposal-decorators) are still at Stage 2 and not production ready. At present, using decorators requires transpiler support, since no current browser or Node release has support for them yet. To implement at this stage, we'll have to use Babel alongside transform-decorators-legacy plugin.
+EcamScript [decorators](https://github.com/tc39/proposal-decorators) are still in Stage 2 and not production ready. At present, using decorators requires transpiler support, since no current browser or Node release has support for them yet. To implement at this stage, we'll have to use Babel alongside transform-decorators-legacy plugin.
 Another option is the use of TypeScript.
 
 At this stage, a decision has been made to use a 3rd party [parse-function](https://www.npmjs.com/package/parse-function) dependency to help us "decompile" functions and gives us the ability to construct a new decorated one.

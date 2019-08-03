@@ -13,7 +13,6 @@ Another option is the use of TypeScript.
 At this stage, a decision have been made to use a 3rd party [parse-function](https://www.npmjs.com/package/parse-function) dependency to help us parse functions and extract parameters and function body and to construct a new decorated funciton.
 
 ## Installation
-* Install dependencies
 ```
 npm install
 ```

@@ -1,4 +1,4 @@
 Splyt challange
 ========
 
-This repository holds a react and a node challange tasks.
+Each sub folder contains it's own Readme file.

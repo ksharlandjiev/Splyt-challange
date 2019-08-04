@@ -18,7 +18,10 @@ While the task does not require, I was curious to check the **Geolocation API**,
 ```
 npm install
 ```
+## Configuration
 
+All configuration can be found in config.json
+ 
 ## Available Scripts
 
 In the project directory, you can run:

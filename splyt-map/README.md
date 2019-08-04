@@ -15,6 +15,7 @@ To go around this common problem, we had to create a proxy server. The current s
 Although the task does not require any geolocation services, I've decided to implement a simple solution (for educational purposes).
 Geolocation implementation is using React component lifecycle methods to demonstrate how application can load initial state (default location) and be fully usable while asking the visitor for permissions and refresh its content on approval.
 
+The solution does not implement any popup’s on click of markers, but such functions are already allocated in the code. In fact, when you click on a marker you will get a console.info message with date of the specific maker.
 
 ## Installation
 ```

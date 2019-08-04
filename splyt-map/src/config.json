@@ -1,0 +1,15 @@
+{
+    "serviceUri": "https://qa-interview-test.qa.splytech.io/api",
+    "proxy": "http://localhost:5000",
+    "token": "pk.eyJ1Ijoia3NoYXJsYW5kamlldiIsImEiOiJjanl3bWkzcjYwcXYyM2NtbG16bmp0YjZ5In0.y4eamHl8uMDQ1ixzFPCBPg",
+    "mapDimensions": { 
+        "height": "80vh", 
+        "width": "100%"
+    }, 
+    "maxItems": 50,
+    "defaultZoom": 13,
+    "defaultLocation": {
+        "latitude": "51.5049375", 
+        "longitude": "-0.0964509"
+    }
+}
